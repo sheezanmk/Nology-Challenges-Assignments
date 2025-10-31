@@ -1,0 +1,11 @@
+@use "./mixins";
+@use "./variables" as v;
+@use "./task-details";
+
+.pending {
+  @include mixins.pending(v.$pending-text-color);
+}
+
+.pending-task {
+  @include mixins.pending-task(v.$pending-task-bg-color);
+}

@@ -1,0 +1,14 @@
+@use "./task-details";
+@use "./mixins";
+@use "./variables" as v;
+
+.overdue {
+  @include mixins.overdue(v.$overdue-text-color);
+}
+
+
+.overdue-task {
+  @include mixins.overdue-task(v.$overdue-task-bg-color);
+}
+
+

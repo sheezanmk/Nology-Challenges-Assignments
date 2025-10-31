@@ -1,0 +1,32 @@
+@use './scss/mixins';
+@use './scss/media';
+
+.flag {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction:row;
+
+
+.stripe {
+    flex: 1;
+}
+
+@include media.mobile{
+ @include mixins.flags(column, black, red, yellow);
+}
+
+@include media.tablet{
+@include mixins.flags(row, black, yellow, red);
+}
+
+
+@include media.desktop{
+@include mixins.flags(row, green, white, orange);
+}
+   
+    
+}
+
+
+

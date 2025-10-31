@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Direction</title>
+    <style>
+      .main-container {
+        width: 600px;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        padding: 10px;
+      }
+      .top-container {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 10px;
+      }
+      .bottom-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .card {
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card > p {
+        color: black;
+        font-size: larger;
+        text-align: center;
+      }
+
+      .lightskyblue {
+        background-color: lightskyblue;
+      }
+      .aliceblue {
+        background-color: aliceblue;
+      }
+      .lightgrey {
+        background-color: lightgrey;
+      }
+
+      .pink {
+        background-color: pink;
+      }
+
+      .lightsalmon {
+        background-color: lightsalmon;
+      }
+      .lightgreen {
+        background-color: lightgreen;
+      }
+      .lightcoral {
+        background-color: lightcoral;
+      }
+
+      .lightblue {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="top-container">
+        <div class="card lightskyblue"><p>Card 8</p></div>
+        <div class="card aliceblue"><p>Card 7</p></div>
+        <div class="card lightgrey"><p>Card 6</p></div>
+        <div class="card pink"><p>Card 5</p></div>
+      </div>
+      <div class="bottom-container">
+        <div class="card lightsalmon"><p>Card 4</p></div>
+        <div class="card lightgreen"><p>Card 3</p></div>
+        <div class="card lightcoral"><p>Card 2</p></div>
+        <div class="card lightblue"><p>Card 1</p></div>
+      </div>
+    </div>
+  </body>
+</html>

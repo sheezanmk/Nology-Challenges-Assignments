@@ -1,0 +1,23 @@
+@use './mixins';
+.task {
+  @include mixins.task;
+ 
+  .task-details {
+margin-bottom: 1rem;
+    padding: 0.7rem 1rem;
+    margin-left: 0px;
+
+    .title {
+      margin-bottom: 3px;
+      font-size: larger;
+    }
+    .date {
+      margin-top: 3px;
+      font-size: smaller;
+    }
+  }
+    .icon {
+    @include mixins.icon;
+  }
+  
+}

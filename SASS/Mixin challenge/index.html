@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do Tasks</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="todo">
+      <h1>To-Do Tasks</h1>
+
+      <section class="columns">
+        <!-- Overdue -->
+        <div class="column overdue">
+          <h2>OVERDUE</h2>
+          <div class="task overdue-task">
+            <span class="icon"><i class="fa-solid fa-exclamation"></i></span>
+            <div class="task-details">
+              <p class="title">JavaScript challenges</p>
+              <span class="date">31 Oct 2024</span>
+            </div>
+          </div>
+
+          <div class="task overdue-task">
+            <span class="icon"><i class="fa-solid fa-exclamation"></i></span>
+            <div class="task-details">
+              <p class="title">Get groceries</p>
+              <span class="date">27 Oct 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pending -->
+        <div class="column pending">
+          <h2>PENDING</h2>
+          <div class="task pending-task">
+            <span class="icon"><i class="fa-regular fa-circle"></i></span>
+            <div class="task-details">
+              <p class="title">Portfolio project</p>
+              <span class="date">1 Nov 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Completed -->
+        <div class="column completed">
+          <h2>COMPLETED</h2>
+          <div class="task completed-task">
+            <span class="icon"><i class="fa-solid fa-check"></i></span>
+            <div class="task-details">
+              <p class="title">Laundry</p>
+              <span class="date">1 Oct 2024</span>
+            </div>
+          </div>
+          <div class="task completed-task">
+            <span class="icon"><i class="fa-solid fa-check"></i></span>
+            <div class="task-details">
+              <p class="title">Run 5 km</p>
+              <span class="date">12 Oct 2024</span>
+            </div>
+          </div>
+          <div class="task completed-task">
+            <span class="icon"><i class="fa-solid fa-check"></i></span>
+            <div class="task-details">
+              <p class="title">Visit grandma</p>
+              <span class="date">15 Oct 2024</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

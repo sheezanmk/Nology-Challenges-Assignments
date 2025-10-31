@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .container {
+        width: 900px;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+
+      .box {
+        height: 300px;
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .box > p {
+        color: white;
+        font-size: larger;
+        text-align: center;
+      }
+
+      .lightblue {
+        background-color: lightblue;
+      }
+      .orange {
+        background-color: orange;
+      }
+      .pink {
+        background-color: hotpink;
+      }
+
+      .red {
+        background-color: red;
+      }
+
+      .green {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="box lightblue"><p>Box 8</p></div>
+      <div class="box red"><p>Box 11</p></div>
+      <div class="box orange"><p>Box 9</p></div>
+      <div class="box pink"><p>Box 10</p></div>
+      <div class="box green"><p>Box 12</p></div>
+    </section>
+  </body>
+</html>

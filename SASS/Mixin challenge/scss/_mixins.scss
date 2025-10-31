@@ -1,0 +1,64 @@
+@mixin column {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  width: 70%;
+  gap: 10px;
+  height: 100;
+}
+
+@mixin overdue($overdue-text-color) {
+  @include column;
+  color: $overdue-text-color;
+}
+
+@mixin pending($pending-text-color) {
+  @include column;
+  color: $pending-text-color;
+}
+
+@mixin completed($completed-text-color) {
+  @include column;
+  color: $completed-text-color;
+}
+
+@mixin task {
+  max-height: 10%;
+  width: 90%;
+  padding: 15px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid white;
+  border-radius: 999px;
+  box-shadow: (0, 0, 0, 0.1) 0px 2px 8px;
+}
+
+@mixin overdue-task($overdue-task-bg-color) {
+  @include task;
+  background-color: $overdue-task-bg-color;
+}
+
+@mixin pending-task($pending-task-bg-color) {
+  @include task;
+  background-color: $pending-task-bg-color;
+}
+
+@mixin completed-task($completed-task-bg-color) {
+  @include task;
+  background-color: $completed-task-bg-color;
+}
+
+@mixin icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}

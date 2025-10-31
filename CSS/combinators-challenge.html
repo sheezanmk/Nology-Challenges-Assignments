@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border:solid;
+           
+        }
+        div h1 {
+            color: blue;
+        }
+        div h3{
+            color: red;
+            text-decoration: underline;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div p{
+            margin-left: 50px;
+        }
+
+         div ~ p {
+            color: brown;
+         }
+           div + p{
+            color: coral;
+            font-weight: bold;
+           }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>I'm blue and Arial</h1>
+        <h3>I'm red, undelrined and Arial</h3>
+        <p>I have no bullet point</p>
+        <p>I also have no bullet point</p>
+    </div>
+    <p>I'm coral and bold</p>
+    <div>
+    <h1>I'm blue and Arial</h1>
+       <h3> I'm red, underlined and Arial</h3>
+       <p>I have no bullet point</p>
+       <h3>I'm red, underlined and Arial</h3>
+    </div>
+    <p>I'm coral and bold</p>
+    <p>I'm brown</p>
+    <p>I'm also brown</p>
+    
+</body>
+</html>

@@ -1,0 +1,11 @@
+@use "./mixins";
+@use "./variables" as v;
+@use "./task-details";
+
+.completed {
+  @include mixins.completed(v.$completed-text-color);
+}
+
+.completed-task {
+  @include mixins.completed-task(v.$completed-task-bg-color);
+}

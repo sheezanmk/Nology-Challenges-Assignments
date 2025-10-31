@@ -1,0 +1,28 @@
+h1{
+    color: orange;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    color: green;
+}
+p{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 2%;
+    
+}
+
+div{
+    text-align:left;
+    border: 3px solid black;
+}
+span{
+    font-style: italic;
+    text-decoration: underline;
+
+}

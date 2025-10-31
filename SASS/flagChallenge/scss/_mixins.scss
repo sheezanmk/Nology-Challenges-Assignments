@@ -1,0 +1,22 @@
+@mixin flags($direction, $stripe1, $stripe2, $stripe3)
+{
+
+   flex-direction: $direction;
+    .stripe:nth-child(1)
+    {
+        background-color: $stripe1;
+      
+    }
+
+    .stripe:nth-child(2)
+    {
+        background-color: $stripe2;
+      
+    }
+
+    .stripe:nth-child(3)
+    {
+        background-color: $stripe3;
+      
+    }
+}
