@@ -1,0 +1,72 @@
+@use "./variables" as v;
+@use "./mixins";
+.header {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+
+  &__content {
+    @include mixins.content;
+
+    .header__cafeName {
+      @include mixins.cafeName;
+    }
+    .header__cafeSubtitle {
+      @include mixins.cafeSubtitle;
+    }
+
+    .header__button {
+      @include mixins.review-button;
+    }
+  }
+
+  .header__img {
+    width: 50%;
+    max-width: 50%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .header__content {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .header__cafeName {
+    font-size: 2.2rem;
+  }
+
+  .header__cafeSubtitle {
+    font-size: 1.2rem;
+  }
+
+  .header__img {
+    justify-content: center;
+  }
+
+  .header__img img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .header__content,
+  .header__img {
+    flex: 1 1 100%;
+  }
+}

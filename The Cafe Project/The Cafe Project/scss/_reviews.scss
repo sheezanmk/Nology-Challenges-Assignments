@@ -1,0 +1,21 @@
+@use "./variables" as v;
+@use "./mixins";
+
+.reviews {
+  @include mixins.review-section;
+
+  &__title {
+    @include mixins.review-heading;
+  }
+
+  &__container {
+    @include mixins.review-container;
+    .review {
+      @include mixins.review;
+
+      &__text {
+        @include mixins.review-text;
+      }
+    }
+  }
+}

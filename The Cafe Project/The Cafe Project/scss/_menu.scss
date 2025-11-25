@@ -1,0 +1,43 @@
+@use "./variables" as v;
+@use "./mixins";
+
+.menu {
+  @include mixins.menu;
+
+  &__title {
+    @include mixins.title;
+  }
+
+  &__section {
+    @include mixins.section;
+
+    summary {
+      font-family: v.$font-body;
+      font-weight: 600;
+      font-size: 1.2rem;
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    & .menu__list {
+      @include mixins.menu-list;
+
+      & .menu__item {
+        @include mixins.menu-item;
+
+        .item-info {
+          @include mixins.item-info;
+
+          .menu__tags {
+            @include mixins.menu-tags;
+          }
+        }
+      }
+    }
+  }
+}

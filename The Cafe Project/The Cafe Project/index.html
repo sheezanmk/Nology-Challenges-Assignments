@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Pink Coffee Corner</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+  <!-- == Nav== -->
+  <nav class="nav">
+    <div class="nav__container">
+      <div class="nav__logo">
+      <a href="index.html">
+        <i class="fa-solid fa-mug-hot"></i>
+      </a>
+    </div>
+      <div class="nav__links">
+        <span><a href="about.html" class="nav__link">ABOUT</a></span>
+        <span><a href="contact.html" class="nav__link">CONTACT</a></span>
+      
+  </nav>
+
+ <!-- == Header== -->
+  <header class="header">
+    <div class="header__content">
+      <h1 class="header__cafeName">The Pink <br>Coffee Corner</h1>
+      <h2 class="header__cafeSubtitle">Best Coffee in Melbourne</h2>
+      <a href="#reviews" class="header__button">See Reviews</a>
+    </div>
+    <div class="header__img"><img src="./images/hero_image.jpg" alt="restaurant"></div>
+  </header>
+
+  <!-- == Menu == -->
+  <main>
+    <section class="menu" id="menu">
+      <h2 class="menu__title">Our Menu</h2>
+
+      <!-- Food -->
+     <details class="menu__section menu__section--food" open>
+  <summary> Food</summary>
+  <div class="menu__list">
+
+    <!-- Chocolate Cupcake -->
+    <div class="menu__item">
+      <img src="./images/chocolate_cupcake.jpg" alt="Chocolate Cupcake" />
+     <div class="item-info">
+      <h3>Chocolate Cupcake</h3>
+      <div class="menu__tags">
+        <i class="fa-solid fa-leaf"></i> <span>Vegan</span>
+      </div>
+     </div>
+      
+    </div>
+
+    <!-- Donuts -->
+    <div class="menu__item">
+      <img src="./images/donuts.jpg" alt="Donuts" />
+      <div class="item-info">
+        <h3>Donuts</h3>
+      <div class="menu__tags">
+        <i class="fa-solid fa-wheat-awn-circle-exclamation"></i> <span>Gluten Free</span>
+      </div>
+      </div>
+    </div>
+
+    <!-- Raspberry Cupcake -->
+    <div class="menu__item">
+      <img src="./images/raspberry_cupcake.jpg" alt="Raspberry Cupcake" />
+      <div class="item-info">
+        <h3>Raspberry Cupcake</h3>
+      <div class="menu__tags">
+        <i class="fa-solid fa-leaf"></i> <span>Vegan</span>
+        <i class="fa-solid fa-wheat-awn-circle-exclamation"></i> <span>Gluten Free</span>
+      </div>
+      </div>
+    </div>
+
+    <!-- Vanilla Cake -->
+    <div class="menu__item">
+      <img src="./images/vanilla_cake.jpg" alt="Vanilla Cake" />
+      <div class="item-info">
+        <h3>Vanilla Cake</h3>
+      <div class="menu__tags">
+        <i class="fa-solid fa-egg"></i> <span>Contains Eggs</span>
+      </div>
+      </div>
+    </div>
+
+    <!-- Cheesecake -->
+    <div class="menu__item">
+      <img src="./images/cheesecake.jpg" alt="Cheesecake" />
+      <div class="item-info">
+        <h3>Cheesecake</h3>
+      <div class="menu__tags">
+        <i class="fa-solid fa-egg"></i> <span>Contains Eggs</span>
+        <i class="fa-solid fa-cow"></i> <span>Contains Dairy</span>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</details>
+
+      <!-- Drinks -->
+      <details class="menu__section menu__section--drinks" open>
+  <summary> Drinks</summary>
+  <div class="menu__list">
+
+    <!-- Flat White -->
+    <div class="menu__item">
+      <img src="./images/coffee.jpg" alt="Flat White" />
+      <div class="item-info">
+        <h3>Flat White</h3>
+      <div class="menu__tags">
+        <i class="fa-solid fa-leaf"></i> <span>Vegan Options Available</span>
+      </div>
+      </div>
+    </div>
+
+    <!-- Green Smoothie -->
+    <div class="menu__item">
+      <img src="./images/green_smoothie.jpg" alt="Green Smoothie" />
+      <div class="item-info">
+        <h3>Green Smoothie</h3>
+      <div class="menu__tags">
+        <i class="fa-solid fa-leaf"></i> <span>Vegan Options Available</span>
+      </div>
+      </div>
+    </div>
+
+    <!-- Peanut Butter Smoothie -->
+    <div class="menu__item">
+      <img src="./images/peanut_smoothie.jpg" alt="Peanut Butter Smoothie" />
+      <div class="item-info">
+        <h3>Peanut Butter Smoothie</h3>
+      <div class="menu__tags">
+        <i class="fa-solid fa-hand-dots"></i> <span>Contains Nuts</span>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</details>
+    </section>
+
+    <!-- ===== Reviews == -->
+    <section class="reviews" id="reviews">
+      <h2 class="reviews__title">Reviews</h2>
+
+      <div class="reviews__container">
+        <article class="review">
+          <i class="fa-solid fa-quote-left"></i>
+          <p class="review__text">
+            The Pink Coffee Corner is amazing! Cozy ambiance, perfect lattes, and friendly staff. 
+            The avocado toast is a must-try. Definitely coming back!
+          </p>
+          <i class="fa-solid fa-quote-right"></i>
+          <p class="review__author">Sarah L. — 8th July 2024</p>
+        </article>
+
+        <article class="review">
+          <i class="fa-solid fa-quote-left"></i>
+          <p class="review__text">
+            The Pink Coffee Corner is my favorite! Perfect mocha, tasty almond croissant, 
+            and a welcoming atmosphere. Free Wi-Fi is a bonus. Can't wait to return!
+          </p>
+          <i class="fa-solid fa-quote-right"></i>
+          <p class="review__author">Jenny B. — 4th June 2023</p>
+        </article>
+
+        <article class="review">
+          <i class="fa-solid fa-quote-left"></i>
+          <p class="review__text">
+            Great spot for coffee lovers. Smooth flat white and delicious cake. 
+            It can get crowded at lunchtime, but worth the visit for the quality and friendly service.
+          </p>
+          <i class="fa-solid fa-quote-right"></i>
+          <p class="review__author">John M.  — 8th July 2024</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- == Footer == -->
+  <footer class="footer">
+    <div class="footer__content">
+      <span class="mug-icon"><i class="fa-solid fa-mug-hot"></i></span>
+      <p class="footer__text">Copyright © 2024 </p>
+      </div>
+      <div class="ig-icon"><a href="#" class="footer__social"><i class="fa-brands fa-square-instagram"></i></a></div>
+      
+    
+  </footer>
+</body>
+</html>
