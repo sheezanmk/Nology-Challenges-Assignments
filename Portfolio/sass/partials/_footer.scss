@@ -1,0 +1,18 @@
+.footer {
+  background: black;
+  padding: 1.2rem 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__top {
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s ease;
+  }
+}

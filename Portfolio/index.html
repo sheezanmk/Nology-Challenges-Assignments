@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Sheezan</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="#hero" class="nav__logo">Sheezan</a>
+      <div class="nav__menu">
+        <a href="#about" class="nav__menu-item">About me</a>
+        <a href="#skills" class="nav__menu-item">My Skills</a>
+        <a href="#projects" class="nav__menu-item">Portfolio</a>
+        <a href="#contact" class="nav__menu-item">Contacts</a>
+      </div>
+    </nav>
+
+    <header class="hero" id="hero">
+      <div class="hero__content">
+        <h1 class="hero__text">
+          Hi there! My name is Sheezan and I'm an aspiring software developer.
+        </h1>
+
+        <a href="#" class="hero__button">Download the CV</a>
+      </div>
+    </header>
+    <main class="main">
+      <section class="about">
+        <div class="about__content">
+          <h2 class="about__title">About me</h2>
+          <div class="about__divider">
+            <span class="about__line"></span>
+            <span class="about__arrow"></span>
+            <span class="about__line"></span>
+          </div>
+          <div class="about__body">
+          <img
+            src="sass/assets/images/sheezan.jpg"
+            alt="Sheezan photo"
+            class="about__photo"
+          />
+          <p class="about__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <p class="about__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills" id="skills">
+        <div class="skills__container">
+          <h2 class="skills__title">My Skills</h2>
+          <div class="skills__divider">
+            <span class="skills__line"></span>
+            <span class="skills__arrow"></span>
+            <span class="skills__line"></span>
+          </div>
+
+          <div class="skills__list">
+            <span class="skills__item">HTML</span>
+            <span class="skills__item">CSS</span>
+            <span class="skills__item">SASS</span>
+            <span class="skills__item">JavaScript</span>
+            <span class="skills__item">Git</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="projects__container">
+          <h2 class="projects__heading">Portfolio</h2>
+
+          <div class="projects__divider">
+            <span class="projects__line"></span>
+            <span class="projects__arrow"></span>
+            <span class="projects__line"></span>
+          </div>
+
+          <div class="projects__list">
+            <div class="project__images">
+              <div class="project__image">
+                <img src="sass/assets/images/placeholder.webp" alt="Project 1" />
+              </div>
+              <h3 class="project__title">Project Title</h3>
+              <p class="project__text">
+                A short description about your project goes here.
+              </p>
+              <a href="#" class="project__button">Read more</a>
+            </div>
+
+            <div class="project__images">
+              <div class="project__image">
+                <img src="sass/assets/images/placeholder.webp" alt="Project 2" />
+              </div>
+              <h3 class="project__title">Project Title</h3>
+              <p class="project__text">
+                A short description about your project goes here.
+              </p>
+              <a href="#" class="project__button">Read more</a>
+            </div>
+
+            <div class="project__images">
+              <div class="project__image">
+                <img src="sass/assets/images/placeholder.webp" alt="Project 3" />
+              </div>
+              <h3 class="project__title">Project Title</h3>
+              <p class="project__text">
+                A short description about your project goes here.
+              </p>
+              <a href="#" class="project__button">Read more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact__container">
+          <h2 class="contact__title">Contacts</h2>
+
+          <div class="contact__divider">
+            <span class="contact__line"></span>
+            <span class="contact__arrow"></span>
+            <span class="contact__line"></span>
+          </div>
+
+          <div class="contact__list">
+            <div class="contact__item">
+              <div class="contact__icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <h3 class="contact__label">E-mail</h3>
+              <a href="mailto:youremail@example.com" class="contact__value">
+                youremail@example.com
+              </a>
+            </div>
+
+            <div class="contact__item">
+              <div class="contact__icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <h3 class="contact__label">Telephone number</h3>
+              <a href="tel:+61000000000" class="contact__value">
+                +61 00 000 000
+              </a>
+            </div>
+
+            <div class="contact__item">
+              <div class="contact__icon">
+                <i class="fa-solid fa-share-nodes"></i>
+              </div>
+
+              <h3 class="contact__label">Social media</h3>
+              <div class="contact__value">
+                <a href="#" class="contact__link">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn</a
+                >
+                <span>·</span>
+                <a href="#" class="contact__link"
+                  ><i class="fa-brands fa-github"></i> GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__content">
+          <p class="footer__text">
+            &copy; 2025 Sheezank. All rights reserved.
+          </p>
+          <a href="#hero" class="footer__top">
+            Back to top <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

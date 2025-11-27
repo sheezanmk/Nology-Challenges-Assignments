@@ -1,0 +1,51 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  min-height: 50vh;
+  padding-top: 50px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("sass/assets/images/keyboard.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__text {
+    margin: 0 0 2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.4;
+    max-width: 700px;
+    margin-inline: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  &__button {
+    padding: 0.8rem 2.2rem;
+    border-radius: 999px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: rgb(175, 106, 115);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+    }
+  }
+}

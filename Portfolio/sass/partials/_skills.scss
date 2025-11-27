@@ -1,0 +1,84 @@
+@use "../mixins/media" as mq;
+.skills {
+  text-align: center;
+  padding: 1rem 1.5rem;
+  margin-top: 5rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    
+  }
+  &__title {
+    margin: 0 0 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  &__divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  &__line {
+    width: 80px;
+    height: 2px;
+    border-bottom: 2px dotted rgb(175, 106, 115);
+  }
+
+  &__arrow {
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid rgb(175, 106, 115); 
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1.2rem;
+    width: 70px; // circle width
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(175, 106, 115);
+    font-size: 0.9rem;
+    transition: background 0.5s ease, transform 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      background-color: rgb(175, 106, 115);
+      // color: #fff;
+      transform: translateY(-2px);
+    }
+  }
+
+  @include mq.desktop {
+    .skills {
+      padding: 5rem 1.5rem;
+    }
+
+    &__title {
+      font-size: 1.9rem;
+    }
+
+    &__item {
+      font-size: 1rem;
+    }
+  }
+}

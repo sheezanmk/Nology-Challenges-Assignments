@@ -1,0 +1,95 @@
+@use "../mixins/media" as mq;
+.projects {
+  padding: 3.5rem 1.5rem;
+  background-color: #fff;
+  text-align: center;
+
+  &__container {
+  }
+
+  &__heading {
+    margin: 0 0 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  &__divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+
+    height: 10px;
+  }
+  &__line {
+    width: 80px;
+    border-bottom: 2px dotted rgb(175, 106, 115);
+  }
+
+  &__arrow {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid rgb(175, 106, 115);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  .project__images {
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    width: 100%;
+    max-width: 320px;
+    padding-bottom: 1.2rem;
+  }
+
+  .project__image img {
+    display: block;
+    width: 100%;
+    max-height: 160px;
+    object-fit: cover;
+  }
+  .project__title {
+    margin: 1rem 0 0.4rem;
+    font-size: 2.1rem;
+    font-weight: 600;
+  }
+
+  .project__text {
+    max-width: 85%;
+    font-size: 0.9rem;
+  }
+
+  .project__button {
+    padding: 0.5rem 1.2rem;
+    border-radius: 999px;
+
+    color: blue;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  @include mq.desktop {
+    .projects {
+      padding: 5rem 1.5rem;
+    }
+
+    &__list {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__images {
+      max-width: 280px;
+    }
+  }
+}
