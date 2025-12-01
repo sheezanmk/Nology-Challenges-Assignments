@@ -34,7 +34,7 @@ if (n % 2===0)
   let x = parseInt(prompt("Enter a number:"));
 
 let res = (x % 2 === 0) 
-  ? x + " is even" 
+  ? x + " is even";
   : x + " is odd";
 
 console.log(res);

@@ -10,7 +10,7 @@
     else if (today===5) return "Friday";
     else return "Saturday";
 }
-console.log("Today is " +getToday()); 1
+console.log("Today is " +getToday()); 
 
 
 //Using switch
